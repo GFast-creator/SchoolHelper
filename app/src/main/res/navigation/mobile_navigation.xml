@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_days_timetable"
+        android:name="ru.gfastdev.schoolhelper.Fragments.TimetableFragment"
+        android:label="Расписание"
+        tools:layout="@layout/fragment_timetable" >
+        <action
+            android:id="@+id/action_nav_days_timetable_to_timetableSetActivity"
+            app:destination="@id/timetableSetActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ru.gfastdev.schoolhelper.Fragments.HomeFragment"
+        android:label="Главная"
+        tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/timetableSetActivity"
+        android:name="ru.gfastdev.schoolhelper.Activity.TimetableSetActivity"
+        android:label="activity_timetable_set"
+        tools:layout="@layout/activity_timetable_set" >
+        <argument
+            android:name="day"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </activity>
+    <fragment
+        android:id="@+id/nav_school_subjects"
+        android:name="ru.gfastdev.schoolhelper.Fragments.SchoolSubjectsFragment"
+        android:label="Предметы"
+        tools:layout="@layout/fragment_school_subjects" />
+</navigation>

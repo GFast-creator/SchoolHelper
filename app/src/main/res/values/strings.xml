@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SchoolHelper</string>
+    <string name="logo">Лого компании</string>
+    <string name="photoOfDev">Фотография разработчика</string>
+    <string name="devName">Рахматуллин Руслан Ильгизович</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Домой</string>
+    <string name="menu_gallery">Галерея</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
